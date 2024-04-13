@@ -1,0 +1,39 @@
+Home Activity
+
+Comments Section
+1. Create the route in web.php, make sure to add comment controller in web.php
+2. use the route in comments.blade.php and show.blade.php
+3. Test it by adding a new comment... and check if the comment is
+   added to the comments table
+
+
+NOTE: All the methods (functions)
+inside the models can be called dynamically.
+When we say dynamic... it is like we are calling
+the method as if it is a property
+In other words, if you want to call the method
+in your model, do not include the parenthesis
+
+Delete Comment Activity
+1. Create the destroy method in the CommentController
+2. Create the route and call the destroy method
+3. Use/Apply in comments and show.blade.php
+4. Check your database if the comment is deleted
+
+************************************************
+FOLOW/UNFOLLOW
+                                        Auth::user()->id == 1 (John Smith)
+                                        Auth::user()->id == 3 (David Monroe)
+FOLLOWS TABLE
+follower_id                 following_id
+1                                2
+1                                3
+3                                2
+3                                1
+
+
+USERS TABLE
+Id                       Name
+1                       John Smith
+2                       Tim Watson
+3                       David Monroe
